@@ -11,5 +11,8 @@ WORKDIR /source
 
 RUN chmod +x ./install-packages.sh && ./install-packages.sh
 
+COPY ./pandoc-plot /usr/bin/pandoc-plot
+RUN chmod +x /usr/bin/pandoc-plot
+
 # RUN cp ./classfiles/* "$(kpsewhich -var-value=TEXMFHOME)"
 RUN chmod +x ./clean-and-build.sh

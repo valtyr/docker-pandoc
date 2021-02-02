@@ -10,6 +10,9 @@ mv ./pandoc-include-code /usr/local/bin
 # INSTALL PANDOC-FIGNOS
 pip3 install pandoc-fignos --user
 
+# INSTALL NUMPY, PANDAS AND MATPLOTLIB
+pip3 install numpy matplotlib pandas --user
+
 # INSTALL MONO FONTS
 curl -L https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
 
